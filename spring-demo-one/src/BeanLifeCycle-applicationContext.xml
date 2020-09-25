@@ -28,7 +28,8 @@
      
      
     <bean id="myCoach" class="com.mooncode.springdemo.TrackCoach" 
-    init-method="doMyStart" destroy-method="doMyDestroy">
+	    init-method="doMyStart"
+	     destroy-method="doMyDestroy">
     
          <!-- Set up constructor injection -->
          <constructor-arg ref="myFortune"/>
