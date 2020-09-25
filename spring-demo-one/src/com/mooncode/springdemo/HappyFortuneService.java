@@ -5,9 +5,6 @@ import java.util.Random;
 public class HappyFortuneService implements FortuneService {
 	
 	
-	private String[] arrayFortune = {"I'am Happy","Good job","Repeat Again"};
-	
-	
 
 	@Override
 	public String getFortune() {
@@ -16,11 +13,5 @@ public class HappyFortuneService implements FortuneService {
 	}
 
 
-	public String getRandomFortune() {
-		Random random = new Random();
-		int rd = random.nextInt(3);
-		
-		return arrayFortune[rd].toString();
-	}
 
 }

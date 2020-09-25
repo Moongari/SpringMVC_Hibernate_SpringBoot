@@ -33,5 +33,18 @@ public class TrackCoach implements ICoach {
 		// TODO Auto-generated method stub
 		return fortuneService.getFortune();
 	}
+	
+	// add an init method
+	
+	public void doMyStart() {
+		System.out.println("TrackCoach : inside method doMyStart");
+	}
+	// add a destroy method
+	
+	public void doMyDestroy() {
+		
+		System.out.println("TrackCoach : inside method doMyDestroy");
+		
+	}
 
 }
