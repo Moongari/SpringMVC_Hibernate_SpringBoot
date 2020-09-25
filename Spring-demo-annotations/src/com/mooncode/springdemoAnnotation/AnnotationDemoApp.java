@@ -10,12 +10,15 @@ public class AnnotationDemoApp {
 		
 		// get the bean from spring container
 		// ici on appele le component definit dans la class TennisCoach
-		ICoach theCoach = context.getBean("BadCoach",ICoach.class);
+		ICoach theCoach = context.getBean("boxeCoach",ICoach.class);
 		
 		// call method on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
 		System.out.println(theCoach.OtherWork());
+		
+		
+		
 		// close the context
 		
 		context.close();

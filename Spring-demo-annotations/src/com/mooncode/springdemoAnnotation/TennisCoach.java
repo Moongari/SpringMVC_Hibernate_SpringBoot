@@ -2,7 +2,7 @@ package com.mooncode.springdemoAnnotation;
 
 import org.springframework.stereotype.Component;
 
-@Component("BadCoach")
+@Component
 public class TennisCoach implements ICoach {
 
 	@Override
