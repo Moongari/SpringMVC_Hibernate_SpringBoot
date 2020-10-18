@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 public class BoxeCoach implements ICoach {
 	
 	@Autowired
-	@Qualifier("randomFortuneService") // attention il faut utiliser une minuscule pour injecter cette classe 
+	@Qualifier("dataBaseFortuneService") // attention il faut utiliser une minuscule pour injecter cette classe 
 	private FortuneService fortuneService;
 	
 	

@@ -8,7 +8,7 @@ public class DataBaseFortuneService implements FortuneService {
 	@Override
 	public String getFortuneService() {
 	
-		return null;
+		return "Connection a la Database.";
 	}
 
 }

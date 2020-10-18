@@ -7,7 +7,7 @@ public class RestFortuneService implements FortuneService {
 	@Override
 	public String getFortuneService() {
 
-		return null;
+		return "Get API Rest....";
 	}
 
 }

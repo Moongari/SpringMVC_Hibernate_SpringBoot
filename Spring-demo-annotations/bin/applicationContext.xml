@@ -19,7 +19,7 @@
     </bean>
     	-->
 		
-		
+		<context:property-placeholder location="classpath:sport.properties"/> <context:property-placeholder location="classpath:sport.properties"/> 
 
     <!--add entry to enable component scanning -->
    <context:component-scan base-package="com.mooncode.springdemoAnnotation"></context:component-scan>

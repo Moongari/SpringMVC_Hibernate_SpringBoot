@@ -8,12 +8,13 @@ import org.springframework.stereotype.Component;
 public class RandomFortuneService implements FortuneService {
 
 	// define a data Array
+	private Random rd = new Random();
 	
 	public String[] data = {
-			"Attention au loup","Oups les loups sont la !","Bonne chance mon gars"
+			"Uppercute du droit ","Crochet du gauche","Esquive bien !!"
 	};
 	
-	private Random rd = new Random();
+	
 	
 	@Override
 	public String getFortuneService() {

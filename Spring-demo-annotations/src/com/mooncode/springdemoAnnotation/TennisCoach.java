@@ -1,10 +1,17 @@
 package com.mooncode.springdemoAnnotation;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements ICoach {
 
+	@Autowired
+	@Qualifier("happyFortuneService")
+	private FortuneService fortuneService;
+	
+	
 	@Override
 	public String getDailyWorkout() {
 
@@ -13,7 +20,11 @@ public class TennisCoach implements ICoach {
 	
 	@Override
 	public String OtherWork() {
-		return "cours plus vite sur le cour....!";
+		return fortuneService.getFortuneService();
 	}
+	
+	
+	
+	
 
 }
